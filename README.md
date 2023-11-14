@@ -1,7 +1,7 @@
 # Quick Start
 
-[BluetoothMe-Library](https://github.com/BluetoothMe/BluetoothMe)  
-[Examples](https://github.com/BluetoothMe/BluetoothMe/tree/main/examples)  
+- [BluetoothMe-Library](https://github.com/BluetoothMe/BluetoothMe)  
+- [Examples](https://github.com/BluetoothMe/BluetoothMe/tree/main/examples)  
 
 
 ## App
@@ -23,9 +23,10 @@ The application also has `Chat`, where you can see all sent and received message
 
 ## Library
 BluetoothMe library is required for proper interaction with Arduino. It helps recognize commands sent from the application.  
-Each command consists of a `tag` and a `value`, separated by a `/` character and a `\n` character at the end (eg `tag/value` `\n`).  
-A `tag` is a command identifier that helps group commands by topic (eg `led` to control the state of an LED).  
-A `value` is the meaningful payload of the command (eg `1` or `0` to turn the LED on or off respectively).  
+Each command consists of a `tag` and a `value`, separated by a `/` character and a `\n` character at the end (eg `tag/value` `\n`):
+- `tag` is a command identifier that helps group commands by topic (eg `led` to control the state of an LED).  
+- `value` is the meaningful payload of the command (eg `1` or `0` to turn the LED on or off respectively).  
+
 So, the command to turn on the LED will be `led/1` `\n`, and to turn it off `led/0` `\n`.  
 
 The library provides support for all Arduino-compatible Bluetooth modules using a different implementation of the `IBluetoothAdapter` interface.
