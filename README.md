@@ -8,7 +8,7 @@
 The app supports `Bluetooth Classic` and `BLE (Bluetooth Low Energy)`. 
 
 With the help of the application, you can create your own user interfaces - `Controllers`, which contain various types of control elements - `Widgets`:
-- `EMPTY` is an empty widget with no control (can be used as a plug).
+- `EMPTY` is an empty widget with no control (can be used as a stub).
 - `BUTTON` is a non-latching button that has two states: pressed and released.
 - `SWITCH` is a two-position switch with locking.
 - `SLIDER` is an element for changing values in a certain range (similar to a scroll bar).
